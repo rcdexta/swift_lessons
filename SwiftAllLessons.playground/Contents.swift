@@ -104,8 +104,18 @@ func mulNumbers(x:Float, y:Float) -> Float {
     return x * y;
 }
 
+func raiseToThePower(num:Int, by:Int = 2) -> Int {
+    var res = 1;
+    for _ in 1...by {
+        res *= num
+    }
+    return res
+}
+
 addNumbers(firstNum: 4, secondNum: 5)
 mulNumbers(1.3, y: 3.4)
+raiseToThePower(4)
+raiseToThePower(4, by: 3)
 
 func sayHelloToAll(names:String...){
     let all = names.joinWithSeparator(" and ")
